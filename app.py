@@ -203,7 +203,7 @@ if uploaded_file:
                 # Configure API
                 api_key = get_api_key()
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('gemini-1.5-pro-latest')
+                model = genai.GenerativeModel('gemini-2.5-pro')
                 
                 all_results = []
                 total_generations = len(df_competencies) * 3
