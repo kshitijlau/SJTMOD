@@ -121,8 +121,8 @@ def parse_indicators(indicator_blob):
     """Parses a string of newline-separated indicators into a clean list."""
     if not isinstance(indicator_blob, str):
         return []
-    # Split by newline, strip whitespace, and filter out any empty lines
-    indicators = [ind.strip() for ind in indicator_blob.split('\n') if ind.strip()]
+    # Use splitlines() to robustly handle different newline characters (\n, \r\n, etc.)
+    indicators = [ind.strip() for ind in indicator_blob.splitlines() if ind.strip()]
     return indicators
 
 # --- Main Application UI ---
