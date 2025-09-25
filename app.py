@@ -91,4 +91,12 @@ You MUST provide the output in a single, clean JSON object. Do not include any t
   },
   "validation_rationale": "A brief explanation of the dilemma created between the two chosen indicators."
 }
+```
+"""
+# --- App Configuration ---
+st.set_page_config(page_title="Athena: SJT Generation Studio", page_icon="🤖", layout="wide")
+
+# --- Helper Functions ---
+def get_api_key():
+# ... (rest of the code is unchanged)
 
