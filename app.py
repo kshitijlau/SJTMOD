@@ -247,4 +247,4 @@ required_columns = {'Competency Name', 'Theme', 'Indicators (PL1)'}
 
 except Exception as e:
     st.error(f"An error occurred while reading the file: {e}")
-    st.error("Please ensure it's a valid Excel (.xlsx) file and the column names are
+  
